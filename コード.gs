@@ -217,16 +217,3 @@ function createAtenaSlide(data) {
 
   return true;
 }
-
-/*
-function tool() {
-  const id = '1xiOC5w8Fj8ULheFk0wkbHdArR6GgeAwB';
-  const file = DriveApp.getFileById(id);
-  const blob = file.getAs('application/vnd.oasis.opendocument.presentation');
-  const base64 = Utilities.base64Encode(blob.getBytes());
-  Logger.log(file.getName());
-  Logger.log(file.getMimeType());
-  Logger.log(base64);
-  DriveApp.createFile('base64.txt', base64, 'plain/text');
-}
-*/
