@@ -1,4 +1,4 @@
-# AtenaPrint
+# はがきの宛名印刷用紙を作成するGAS
 はがきの宛名印刷用の Google Slide を作成する Google Apps Script です。サンプルは[こちら](https://script.google.com/macros/s/AKfycbx-pa5AcF4_MW_a2W5K9HWNHHgRiiWgL8vEu-skAlQi25T6a4jSvywrVOIruqw_h5bP/exec)。Google Drive 上のファイルの読み書きやスプレッドシート、スライドの読み書きなど様々な権限を要求されますので、心配なら自分のスクリプトに本コードをコピーして利用してください。
 
 宛先の郵便番号枠の位置は[日本郵便の説明ページ](https://www.post.japanpost.jp/zipcode/zipmanual/p05.html)を参考にしています。差出人の郵便番号枠の場所がよくわからないので、差出人住所の設定には対応していません。裏側にでも書いてください。
