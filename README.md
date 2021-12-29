@@ -26,7 +26,7 @@ let presentation = Slides.Presentations.create({
   }
 });
 ```
-ただし、2021年12月現在、上記のAPIは pageSize の設定に対応しておらず、何を指定しても標準サイズのSlideが作成されてしまいます。
+ただし、今のところ上記のAPIは pageSize の設定に対応しておらず、何を指定しても標準サイズのSlideが作成されてしまう[らしい](https://issuetracker.google.com/issues/119321089)。
 なので、PowerPoint など Google Slide と互換のあるアプリで事前にはがきサイズのスライドファイルを作成しておき、それを Base64 形式の文字列で持っておき
 [Drive.Files.insert](https://developers.google.com/drive/api/v2/reference/files/insert)で MimeType.GOOGLE_SLIDES 形式でファイルを作成することにより、はがきサイズの Google Slide を作成します。
 ```javascript:コード.gs
