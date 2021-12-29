@@ -1,6 +1,7 @@
 # AtenaPrint
 はがきの宛名印刷用の Google Slide を作成する Google Apps Script です。サンプルは[こちら](https://script.google.com/macros/s/AKfycbx-pa5AcF4_MW_a2W5K9HWNHHgRiiWgL8vEu-skAlQi25T6a4jSvywrVOIruqw_h5bP/exec)。Google Drive 上のファイルの読み書きやスプレッドシート、スライドの読み書きなど様々な権限を要求されますので、心配なら自分のスクリプトに本コードをコピーして利用してください。
 
+なお、差出人の住所には未対応なので、裏に印刷してください。
 ## 使い方
 1. 公開ページのURLにアクセスする
 2. 自分の Google Drive 上のスプレッドシート一覧が表示されるので、宛先情報の入っているスプレッドシートを選択する
