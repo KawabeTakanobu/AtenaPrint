@@ -10,7 +10,7 @@
 5. 作成ボタンを押下すると、Google Drive 上に印刷用の Google Slide が作成される
 
 ## はがきサイズの Google Slide の作り方
-仕様上は[Slides.Presentations.create](https://developers.google.com/slides/api/samples/presentation#create_a_new_presentation)の引数でpageSizeを指定できるので、これを使えれば楽。
+仕様上は[Slides.Presentations.create](https://developers.google.com/slides/api/samples/presentation#create_a_new_presentation)の引数でpageSizeを指定できるので、これが使えれば楽なはずです。
 ```javascript:sample
 let presentation = Slides.Presentations.create({
   title: '宛名印刷用ファイル',
