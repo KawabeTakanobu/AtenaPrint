@@ -1,6 +1,12 @@
 # AtenaPrint
-はがきの宛名印刷用の Google Slide を作成する Google Apps Script。
-自分の Google Drive から宛名情報の記載されたスプレッドシートを選択し、郵便番号、住所、宛名を記載したはがきサイズのGoogle Slide を作成する。
+はがきの宛名印刷用の Google Slide を作成する Google Apps Script です。サンプルは[こちら](https://script.google.com/macros/s/AKfycbx-pa5AcF4_MW_a2W5K9HWNHHgRiiWgL8vEu-skAlQi25T6a4jSvywrVOIruqw_h5bP/exec)。Google Drive 上のファイルの読み書きやスプレッドシート、スライドの読み書きなど様々な権限を要求されますので、心配なら自分のスクリプトに本コードをコピーして利用してください。
+
+## 使い方
+1. 公開ページのURLにアクセスする
+2. 自分の Google Drive 上のスプレッドシート一覧が表示されるので、宛先情報の入っているスプレッドシートを選択する
+3. 利用するシートを選択する
+4. 郵便番号、氏名、敬称、住所の記載されている列を選択する
+5. 作成ボタンを押下すると、Google Drive 上に印刷用の Google Slide が作成される
 
 ## はがきサイズの Google Slide の作り方
 仕様上は[Slides.Presentations.create](https://developers.google.com/slides/api/samples/presentation#create_a_new_presentation)の引数でpageSizeを指定できるので、これを使えれば楽。
