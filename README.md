@@ -32,7 +32,7 @@ let presentation = Slides.Presentations.create({
 1. PowerPoint など Google Slide と互換のあるアプリで事前にはがきサイズのスライドファイルを作成
 2. それを Base64 形式の文字列で保存
 3. [Drive.Files.insert](https://developers.google.com/drive/api/v2/reference/files/insert)で MimeType.GOOGLE_SLIDES 形式でファイルを作成す
-という手順ではがきサイズの Google Slide を作成します。
+という手順ではがきサイズの Google Slide を作成します。具体的なコードは以下の通り。
 ```javascript:コード.gs
 const fileName ='宛名印刷用ファイル';
 const mimeType = 'application/vnd.oasis.opendocument.presentation';
