@@ -60,4 +60,10 @@ function tool() {
   DriveApp.createFile('base64.txt', base64, 'plain/text');
 }
 ```
-PowerPoint ファイルの中身は Office Open XML という規格で作成された XML ファイルを ZIP で固めたものですので、スライドサイズを設定した XML ファイルを自前で作成して ZIP で固めても目的は達せられます・・・が、正直めんどくさいので、GAS がちゃんと pageSize に対応してくれるのを待つ方が早そう。 
+PowerPoint ファイルの中身は Office Open XML という規格で作成された XML ファイルを ZIP で固めたものです。スライドサイズは styles.xml 内で、
+```xml:styles.xml
+<style:page-layout style:name="pageLayout1">
+  <style:page-layout-properties fo:page-width="3.9375in" fo:page-height="5.83333in" style:print-orientation="portrait" style:register-truth-ref-style-name=""/>
+</style:page-layout>
+```
+のように指定されていますので、ここの値を変更して ZIP で固めれば任意のサイズのスライドを作成することが可能です・・・が、正直めんどくさいので、GAS がちゃんと pageSize に対応してくれるのを待つ方が早そう。 
